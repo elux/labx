@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Eluxlab X Solutions</title>
+    <style>
+        .container{
+            width: 50%;
+            margin-left: 25%;
+            text-align: center;
+        }
+        .tx-container{
+            width: 100%;
+            margin-bottom: 5px;
+            
+          
+        }
+        #linkInput{
+            width: 100%;
+            height: 200px;
+        }
+
+        .bt-container button{
+            background-color: aqua;
+            padding: 2.5%;
+            color:#000;
+            border-radius: 50%;
+            border:none;
+        }
+        .bt-container{
+            text-align: left;
+        }
+        .bt-container button:hover{
+            color:#fff;
+            cursor: pointer;
+            border:1px solid #ccc
+        }
+        .important-note{
+            color:green;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+            <div>Pleaase paste your text that contains the twiter link</div>
+        <p>This program will open the links in new tab for you</p>
+        <p>Examples of valid url <i class="important-note">https"//twitter.com/username</i> or <i class="important-note">https://x.com/username</i></p>
+        <p>Examples of valid url <i class="important-note">twitter.com/username</i> or <i class="important-note">x.com/username</i></p>
+        <div class="tx-container">
+            <textarea id="linkInput" placeholder="Paste your links here"></textarea>
+        </div>
+        <div class="bt-container"><button onclick="processLinks()">Submit</button></div>
+    </div>
+    
+
+    <script src="linkProcessor.js"></script>
+</body>
+</html>
