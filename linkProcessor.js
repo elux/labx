@@ -5,11 +5,10 @@ function processLinks() {
     // Extract links using a regular expression
     const linkRegex = /(?:X\.com|twitter\.com)\/[^\s]+/g;
     const extractedLinks = inputText.match(linkRegex) || [];
-    alert(extractedLinks);
-    
+  
     // Remove duplicates by converting to a Set and back to an array
     const uniqueLinks = [...new Set(extractedLinks)];
-    console.log(uniqueLinks);
+  
 
 
 
